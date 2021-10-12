@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
+#include<math.h>
 
 char done = 0x00; //false
 
@@ -31,7 +32,7 @@ typedef struct{
 
 } application;
 
-application *apps[150];
+application apps[150];
 
 int total_pages;
 int current_page; // 0,1,2...
@@ -295,8 +296,8 @@ void logout(GtkButton* self, gpointer user_data){
   exit(0);
 }
 
-void *shutdown_pressed(void *n){
-  shutdown_page_slide_in()
+void shutdown_pressed(){
+  shutdown_page_slide_in();
 }
 
 void create_shutdown_page(){
@@ -315,7 +316,7 @@ void create_shutdown_page(){
   gtk_grid_attach(GTK_GRID(grid),poweroffbtn,1,3,1,1);
   gtk_grid_attach(GTK_GRID(grid),logoutbtn,2,3,1,1);
 
-  g_signal_connect (restart, "clicked",
+  g_signal_connect (restartbtn, "clicked",
                 G_CALLBACK (restart), NULL);
   g_signal_connect (poweroffbtn, "clicked",
                 G_CALLBACK (poweroff), NULL);
@@ -335,7 +336,7 @@ static void activate (GtkApplication* app, gpointer user_data)
   window = gtk_application_window_new (app);
   gtk_window_set_title (GTK_WINDOW(window), "seagull");
   gtk_window_maximize(GTK_WINDOW (window));
-  //gtk_window_fullscreen (GTK_WINDOW (window));
+  gtk_window_fullscreen (GTK_WINDOW (window));
   //gtk_window_set_resizable(GTK_WINDOW (window),false);
   window_width = gtk_widget_get_width (window);
   window_height = gtk_widget_get_height (window);
@@ -411,6 +412,7 @@ static void activate (GtkApplication* app, gpointer user_data)
 ////////////////////////////////////////////
 //      connect socket to go program      //
 ////////////////////////////////////////////
+
 void * recv_socket(void * n){
   int sockfd = socket(AF_UNIX,SOCK_STREAM, 0);
   struct sockaddr_un addr;
@@ -420,7 +422,7 @@ void * recv_socket(void * n){
   connect(sockfd, (struct sockaddr *)&addr,strlen("/tmp/.seagull/uibus"));
   for (;;){
     read(sockfd,buf,1024);
-    switch buf[0]{
+    switch (buf[0]){
     case 'n': // notify
       break;
     case 's': // shutdown long press
@@ -428,15 +430,19 @@ void * recv_socket(void * n){
       break;
     }
   }
+  return NULL;
 }
 
 int gtkmobile()
 {
+    printf("hi2");
     GtkApplication *app;
     int status;
     pthread_t tid;
 
-    pthread_create(&tid NULL, recv_socket, (void *)NULL);
+    printf("hi");
+    pthread_create(&tid, NULL, recv_socket, NULL);
+    printf("hi2");
 
     app = gtk_application_new ("org.seagull.mobile", G_APPLICATION_FLAGS_NONE);
     g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);

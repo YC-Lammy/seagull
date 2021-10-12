@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+    "GUI"
 )
 
 var Testing bool
@@ -21,5 +22,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	w.Run()
+	go w.Run()
+    GUI.NewGtkWindow()
 }

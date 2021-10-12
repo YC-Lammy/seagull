@@ -6,6 +6,7 @@ package GUI
 #cgo CFLAGS: -g -Wall -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED
 
 #include "gtkmobile.h"
+#include<gtk/gtk.h>
 */
 import "C"
 

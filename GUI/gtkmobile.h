@@ -1,6 +1,9 @@
 #ifndef _GTKMOBILE_H
 #define _GTKMOBILE_H
 
-int gtkmobile();
+extern char done;
+extern int long_click_ms;
+extern int drag_offset;
+extern int gtkmobile();
 
 #endif

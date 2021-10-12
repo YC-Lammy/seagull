@@ -1,4 +1,4 @@
 package GUI
 
-func image_from_coordinates()
-func unlockByPicture()
+func image_from_coordinates() {}
+func unlockByPicture()        {}
