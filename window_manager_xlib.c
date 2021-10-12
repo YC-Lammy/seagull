@@ -394,7 +394,6 @@ int EventLoop(Display *display_){
 		case KeyRelease:
 			OnKeyRelease(display_,e.xkey);
 			break;
-		default:
 
     	}
 	}
