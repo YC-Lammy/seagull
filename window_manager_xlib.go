@@ -8,11 +8,15 @@ package main
 #include <stdio.h>
 #include <stdlib.h>
 
+char IsDisplayNull(Display *d){
+	return !(d);
+}
 */
 import "C"
 import (
 	"bufio"
 	"errors"
+	"fmt"
 	"net"
 	"unsafe"
 )
@@ -33,6 +37,7 @@ func NewWindowManager(display_str string) (*WindowManager, error) {
 	display_c_str := C.CString(display_str)
 	W.Display = C.XOpenDisplay(display_c_str)
 	b := C.IsDisplayNull(W.Display)
+	fmt.Println(b)
 	if *(*bool)(unsafe.Pointer(&b)) {
 		a := C.XDisplayName(display_c_str)
 		defer C.free(unsafe.Pointer(a))

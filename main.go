@@ -17,7 +17,7 @@ func init() {
 }
 
 func main() {
-	w, err := NewWindowManager(":0")
+	w, err := NewWindowManager("")
 	if err != nil {
 		panic(err)
 	}

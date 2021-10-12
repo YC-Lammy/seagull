@@ -15,10 +15,6 @@ pthread_mutex_t error_lock;
 
 char wm_detect=0;
 
-char IsDisplayNull(Display *d){
-	return !(d);
-}
-
 int OnWMDetect(Display *d, XErrorEvent *e){
 	wm_detect=1;
 	return 0;

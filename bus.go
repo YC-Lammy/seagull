@@ -2,6 +2,7 @@ package main
 
 import (
 	"net"
+	"os"
 )
 
 type bus_msg struct {
@@ -14,9 +15,18 @@ type bus_msg struct {
 var bus = make(chan []byte)
 
 func init() {
-	l, _ := net.Listen("unix", "/tmp/.seagull/uibus")
+	os.Mkdir("/tmp/.seagull", os.ModePerm)
+	l, err := net.Listen("unix", "/tmp/.seagull/uibus")
+	if err != nil {
+		panic(err)
+	}
 	go func() {
-		c, _ := l.Accept()
+		defer l.Close()
+		defer os.Remove("/tmp/.seagull/uibus")
+		c, err := l.Accept()
+		if err != nil {
+			panic(err)
+		}
 		for {
 			msg := <-bus
 			c.Write(msg)
