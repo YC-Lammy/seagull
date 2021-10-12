@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" src="/static/css/flickity.min.css" type="text/css">
+    </head>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        .icon_button{
+            width:20%;
+            height: 16.6%;
+        }
+
+        .page{
+            width: 100%;
+            display: grid;
+        }
+
+        .main .gallery{
+            background-color: transparent;
+        }
+
+        .main .flickity-prev-next-button {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        }
+        /* arrow color */
+        .main .flickity-prev-next-button .arrow {
+            fill: white;
+            display: none;
+        }
+        .main .flickity-prev-next-button.no-svg {
+            color: white;
+            display: none;
+        }
+        .main .flickity-prev-next-button:hover {
+            background: transparent;
+            display: none;
+        }
+        /* hide disabled button */
+        .main .flickity-prev-next-button:disabled {
+            display: none;
+        }
+        /* position dots in gallery */
+        .main .flickity-page-dots {
+            bottom: 0px;
+        }
+        /* white circles */
+        .main .flickity-page-dots .dot {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+            background: transparent;
+            border: 2px solid white;
+        }
+        /* fill-in selected dot */
+        .main .flickity-page-dots .dot.is-selected {
+            background: white;
+        }
+
+        .favourites{
+            width:100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    
+    <body>
+        <template class="icon_button">
+
+        </template>
+
+        <template class="page" id="page">
+
+        </template>
+
+
+        <div class="main">
+
+            <div class="gallery js-flickity" id="gallery">
+            </div>
+
+        </div>
+
+        
+        <div class="favourites">
+
+        </div>
+        <script>add()</script>
+    </body>
+</html>

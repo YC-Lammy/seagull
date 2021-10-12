@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "c",
+			"any": "c",
+			"string_view": "c",
+			"regex": "c",
+			"type_traits": "c"
+		}
+	}
+}

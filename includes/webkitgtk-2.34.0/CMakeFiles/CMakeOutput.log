@@ -1,0 +1,1159 @@
+The system is: Linux - 5.14.9-200.fc34.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/3.20.5/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/3.20.5/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_f9290 && [1/2] Building C object CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f9290.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cckkdhe8.s
+GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d9978e1d525f02eccc63983c4161253e
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/'
+ as -v --64 -o CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o /tmp/cckkdhe8.s
+GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-6.fc34
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_f9290
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9290' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9290.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccauO7oB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f9290 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9290' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9290.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja-build cmTC_f9290 && [1/2] Building C object CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f9290.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cckkdhe8.s]
+  ignore line: [GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d9978e1d525f02eccc63983c4161253e]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o /tmp/cckkdhe8.s]
+  ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-6.fc34]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_f9290]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9290' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9290.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccauO7oB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f9290 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccauO7oB.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f9290] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_f9290.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_0d30c && [1/2] Building CXX object CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0d30c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc3LxzCe.s
+GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: ee1a2f208dd48c6a5d24bdcd31126e66
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/'
+ as -v --64 -o CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc3LxzCe.s
+GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-6.fc34
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_0d30c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d30c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0d30c.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccinM6rw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0d30c /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d30c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0d30c.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja-build cmTC_0d30c && [1/2] Building CXX object CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0d30c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc3LxzCe.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: ee1a2f208dd48c6a5d24bdcd31126e66]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc3LxzCe.s]
+  ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-6.fc34]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_0d30c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d30c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0d30c.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccinM6rw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0d30c /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccinM6rw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0d30c] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_0d30c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fno-strict-aliasing succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6201e && [1/2] Building C object CMakeFiles/cmTC_6201e.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_6201e
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fno-strict-aliasing succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_0ed14 && [1/2] Building CXX object CMakeFiles/cmTC_0ed14.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_0ed14
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fno-exceptions succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_15a3b && [1/2] Building C object CMakeFiles/cmTC_15a3b.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_15a3b
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fno-exceptions succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_46e0e && [1/2] Building CXX object CMakeFiles/cmTC_46e0e.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_46e0e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fno-rtti succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_a2652 && [1/2] Building CXX object CMakeFiles/cmTC_a2652.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_a2652
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-tautological-compare succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_10828 && [1/2] Building C object CMakeFiles/cmTC_10828.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_10828
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-tautological-compare succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_efe8a && [1/2] Building CXX object CMakeFiles/cmTC_efe8a.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_efe8a
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wcast-align succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_82e35 && [1/2] Building C object CMakeFiles/cmTC_82e35.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_82e35
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wformat-security succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_659d7 && [1/2] Building C object CMakeFiles/cmTC_659d7.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_659d7
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wmissing-format-attribute succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_599de && [1/2] Building C object CMakeFiles/cmTC_599de.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_599de
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wpointer-arith succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e1a68 && [1/2] Building C object CMakeFiles/cmTC_e1a68.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_e1a68
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wundef succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_554b5 && [1/2] Building C object CMakeFiles/cmTC_554b5.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_554b5
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wwrite-strings succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_936f0 && [1/2] Building C object CMakeFiles/cmTC_936f0.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_936f0
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wcast-align succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_9802c && [1/2] Building CXX object CMakeFiles/cmTC_9802c.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_9802c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wformat-security succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e3a29 && [1/2] Building CXX object CMakeFiles/cmTC_e3a29.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_e3a29
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wmissing-format-attribute succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_d23ca && [1/2] Building CXX object CMakeFiles/cmTC_d23ca.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_d23ca
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wpointer-arith succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_5df77 && [1/2] Building CXX object CMakeFiles/cmTC_5df77.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_5df77
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wundef succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6eb61 && [1/2] Building CXX object CMakeFiles/cmTC_6eb61.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_6eb61
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wwrite-strings succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_80b79 && [1/2] Building CXX object CMakeFiles/cmTC_80b79.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_80b79
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-maybe-uninitialized succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_69064 && [1/2] Building C object CMakeFiles/cmTC_69064.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_69064
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-misleading-indentation succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_f12a2 && [1/2] Building C object CMakeFiles/cmTC_f12a2.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_f12a2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-psabi succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6e0e6 && [1/2] Building C object CMakeFiles/cmTC_6e0e6.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_6e0e6
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-maybe-uninitialized succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_3517e && [1/2] Building CXX object CMakeFiles/cmTC_3517e.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_3517e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-misleading-indentation succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_25b78 && [1/2] Building CXX object CMakeFiles/cmTC_25b78.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_25b78
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-psabi succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_06d6b && [1/2] Building CXX object CMakeFiles/cmTC_06d6b.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_06d6b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-noexcept-type succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_ff377 && [1/2] Building CXX object CMakeFiles/cmTC_ff377.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_ff377
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-array-bounds succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_0155e && [1/2] Building CXX object CMakeFiles/cmTC_0155e.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_0155e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-nonnull succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_c409f && [1/2] Building CXX object CMakeFiles/cmTC_c409f.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_c409f
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-expansion-to-defined succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e32ae && [1/2] Building C object CMakeFiles/cmTC_e32ae.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_e32ae
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-expansion-to-defined succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_96f6b && [1/2] Building CXX object CMakeFiles/cmTC_96f6b.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_96f6b
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wall succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_11e57 && [1/2] Building C object CMakeFiles/cmTC_11e57.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_11e57
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wextra succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_65771 && [1/2] Building C object CMakeFiles/cmTC_65771.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_65771
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wall succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_ac250 && [1/2] Building CXX object CMakeFiles/cmTC_ac250.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_ac250
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wextra succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_2a003 && [1/2] Building CXX object CMakeFiles/cmTC_2a003.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_2a003
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e793e && [1/2] Building C object CMakeFiles/cmTC_e793e.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_e793e
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_53ccc && [1/2] Building CXX object CMakeFiles/cmTC_53ccc.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_53ccc
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ATOMICS_ARE_BUILTIN succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_498fa && [1/2] Building CXX object CMakeFiles/cmTC_498fa.dir/src.cxx.o
+src.cxx: In function ‘int main()’:
+src.cxx:7:16: warning: unused variable ‘j’ [-Wunused-variable]
+    7 |           bool j = y.compare_exchange_weak(expected,false);
+      |                ^
+[2/2] Linking CXX executable cmTC_498fa
+
+
+Source file was:
+
+        #include <atomic>
+        int main() {
+          std::atomic<bool> y (false);
+          std::atomic<uint64_t> x (0);
+          bool expected = true;
+          bool j = y.compare_exchange_weak(expected,false);
+          x++;
+          return 0;
+        }
+    
+Performing C++ SOURCE FILE Test STD_FILESYSTEM_IS_AVAILABLE succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_fb865 && [1/2] Building CXX object CMakeFiles/cmTC_fb865.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_fb865
+
+
+Source file was:
+
+        #include <filesystem>
+        int main() { std::filesystem::path p1(""); std::filesystem::status(p1); }
+    
+Determining if the include file features.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6fd39 && [1/2] Building C object CMakeFiles/cmTC_6fd39.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_6fd39
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_875d6 && [1/2] Building C object CMakeFiles/cmTC_875d6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_875d6
+
+
+
+Determining if the include file langinfo.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_cad7d && [1/2] Building C object CMakeFiles/cmTC_cad7d.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_cad7d
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_d119d && [1/2] Building C object CMakeFiles/cmTC_d119d.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d119d
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_96304 && [1/2] Building C object CMakeFiles/cmTC_96304.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_96304
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_0363f && [1/2] Building C object CMakeFiles/cmTC_0363f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_0363f
+
+
+
+Determining if the include file sys/timeb.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_ff45a && [1/2] Building C object CMakeFiles/cmTC_ff45a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ff45a
+
+
+
+Determining if the include file linux/memfd.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_1523b && [1/2] Building C object CMakeFiles/cmTC_1523b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_1523b
+
+
+
+Determining if the function localtime_r exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e4906 && [1/2] Building C object CMakeFiles/cmTC_e4906.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e4906
+
+
+
+Determining if the function malloc_trim exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_b2cbc && [1/2] Building C object CMakeFiles/cmTC_b2cbc.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b2cbc
+
+
+
+Determining if the function timegm exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_8bfaa && [1/2] Building C object CMakeFiles/cmTC_8bfaa.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8bfaa
+
+
+
+Determining if the function vasprintf exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_f356c && [1/2] Building C object CMakeFiles/cmTC_f356c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f356c
+
+
+
+Determining if the regexec exist passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_64966 && [1/2] Building C object CMakeFiles/cmTC_64966.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_64966
+
+
+File /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <regex.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef regexec
+  return ((int*)(&regexec))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the SIGTRAP exist passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e4a56 && [1/2] Building C object CMakeFiles/cmTC_e4a56.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_e4a56
+
+
+File /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGTRAP
+  return ((int*)(&SIGTRAP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_TM_GMTOFF_value succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e4630 && [1/2] Building C object CMakeFiles/cmTC_e4630.dir/src.c.o
+[2/2] Linking C executable cmTC_e4630
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct tm *)0)->tm_gmtoff);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_TM_ZONE_value succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_298ce && [1/2] Building C object CMakeFiles/cmTC_298ce.dir/src.c.o
+[2/2] Linking C executable cmTC_298ce
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct tm *)0)->tm_zone);
+  return 0;
+}
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_9effc && [1/2] Building C object CMakeFiles/cmTC_9effc.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_9effc
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_7940c && [1/2] Building C object CMakeFiles/cmTC_7940c.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7940c
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_5986f && [1/2] Building C object CMakeFiles/cmTC_5986f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_5986f
+
+
+
+Determining size of __int128_t passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_df27e && [1/2] Building C object CMakeFiles/cmTC_df27e.dir/INT128_VALUE.c.o
+[2/2] Linking C executable cmTC_df27e
+
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_915da && [1/2] Building C object CMakeFiles/cmTC_915da.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_915da
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_b04b7 && [1/2] Building CXX object CMakeFiles/cmTC_b04b7.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_b04b7
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e57bf && [1/2] Building C object CMakeFiles/cmTC_e57bf.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_e57bf
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_2f578 && [1/2] Building C object CMakeFiles/cmTC_2f578.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2f578
+
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_ec4c5 && [1/2] Building C object CMakeFiles/cmTC_ec4c5.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_ec4c5
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e5c23 && [1/2] Building CXX object CMakeFiles/cmTC_e5c23.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_e5c23
+
+
+Source file was:
+int main() { return 0; }
+Determining if files GL/glx.h exist passed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_08661 && [1/2] Building C object CMakeFiles/cmTC_08661.dir/GLX_FOUND.c.o
+[2/2] Linking C executable cmTC_08661
+
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_65a78 && [1/2] Building C object CMakeFiles/cmTC_65a78.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_65a78
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_305cc && [1/2] Building CXX object CMakeFiles/cmTC_305cc.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_305cc
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_c31a4 && [1/2] Building C object CMakeFiles/cmTC_c31a4.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_c31a4
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_5526f && [1/2] Building CXX object CMakeFiles/cmTC_5526f.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_5526f
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_85e36 && [1/2] Building C object CMakeFiles/cmTC_85e36.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_85e36
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6b2bd && [1/2] Building CXX object CMakeFiles/cmTC_6b2bd.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_6b2bd
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_6401b && [1/2] Building C object CMakeFiles/cmTC_6401b.dir/src.c.o
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+[2/2] Linking C executable cmTC_6401b
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fdiagnostics-color=always succeeded with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_1a34b && [1/2] Building CXX object CMakeFiles/cmTC_1a34b.dir/src.cxx.o
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+[2/2] Linking CXX executable cmTC_1a34b
+
+
+Source file was:
+int main() { return 0; }

@@ -1,0 +1,256 @@
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Qunused-arguments failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_d9a97 && [1/2] Building C object CMakeFiles/cmTC_d9a97.dir/src.c.o
+FAILED: CMakeFiles/cmTC_d9a97.dir/src.c.o 
+/usr/bin/cc   -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE   -DC_COMPILER_SUPPORTS_-Qunused-arguments -Qunused-arguments -o CMakeFiles/cmTC_d9a97.dir/src.c.o -c src.c
+cc: error: unrecognized command-line option '-Qunused-arguments'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-Wno-parentheses-equality failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_111ff && [1/2] Building C object CMakeFiles/cmTC_111ff.dir/src.c.o
+cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+cc1: note: unrecognized command-line option '-Wno-parentheses-equality' may have been intended to silence earlier diagnostics
+[2/2] Linking C executable cmTC_111ff
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Qunused-arguments failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_26352 && [1/2] Building CXX object CMakeFiles/cmTC_26352.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_26352.dir/src.cxx.o 
+/usr/bin/c++   -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -fno-rtti  -fPIE   -DCXX_COMPILER_SUPPORTS_-Qunused-arguments -Qunused-arguments -o CMakeFiles/cmTC_26352.dir/src.cxx.o -c src.cxx
+c++: error: unrecognized command-line option '-Qunused-arguments'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-Wno-parentheses-equality failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_c84b8 && [1/2] Building CXX object CMakeFiles/cmTC_c84b8.dir/src.cxx.o
+cc1plus: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+cc1plus: note: unrecognized command-line option '-Wno-parentheses-equality' may have been intended to silence earlier diagnostics
+[2/2] Linking CXX executable cmTC_c84b8
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_-fcolor-diagnostics failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_f950b && [1/2] Building C object CMakeFiles/cmTC_f950b.dir/src.c.o
+FAILED: CMakeFiles/cmTC_f950b.dir/src.c.o 
+/usr/bin/cc   -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE   -DC_COMPILER_SUPPORTS_-fcolor-diagnostics -fcolor-diagnostics -o CMakeFiles/cmTC_f950b.dir/src.c.o -c src.c
+cc: error: unrecognized command-line option '-fcolor-diagnostics'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS_-fcolor-diagnostics failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_59f2e && [1/2] Building CXX object CMakeFiles/cmTC_59f2e.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_59f2e.dir/src.cxx.o 
+/usr/bin/c++   -Wextra -Wall -Wno-expansion-to-defined -Wno-nonnull -Wno-array-bounds -Wno-noexcept-type -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -fno-rtti  -fPIE   -DCXX_COMPILER_SUPPORTS_-fcolor-diagnostics -fcolor-diagnostics -o CMakeFiles/cmTC_59f2e.dir/src.cxx.o -c src.cxx
+c++: error: unrecognized command-line option '-fcolor-diagnostics'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread_np.h exists failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_7fb90 && [1/2] Building C object CMakeFiles/cmTC_7fb90.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_7fb90.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE -o CMakeFiles/cmTC_7fb90.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: pthread_np.h: No such file or directory
+    1 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function _aligned_malloc exists failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_9ced0 && [1/2] Building C object CMakeFiles/cmTC_9ced0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_9ced0
+FAILED: cmTC_9ced0 
+: && /usr/bin/cc -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -DCHECK_FUNCTION_EXISTS=_aligned_malloc -fuse-ld=gold -Wl,--disable-new-dtags CMakeFiles/cmTC_9ced0.dir/CheckFunctionExists.c.o -o cmTC_9ced0   && :
+CMakeFiles/cmTC_9ced0.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to '_aligned_malloc'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function IsDebuggerPresent exists failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_99995 && [1/2] Building C object CMakeFiles/cmTC_99995.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_99995
+FAILED: cmTC_99995 
+: && /usr/bin/cc -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -DCHECK_FUNCTION_EXISTS=IsDebuggerPresent -fuse-ld=gold -Wl,--disable-new-dtags CMakeFiles/cmTC_99995.dir/CheckFunctionExists.c.o -o cmTC_99995   && :
+CMakeFiles/cmTC_99995.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'IsDebuggerPresent'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function strnstr exists failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_e435c && [1/2] Building C object CMakeFiles/cmTC_e435c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e435c
+FAILED: cmTC_e435c 
+: && /usr/bin/cc -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -DCHECK_FUNCTION_EXISTS=strnstr -fuse-ld=gold -Wl,--disable-new-dtags CMakeFiles/cmTC_e435c.dir/CheckFunctionExists.c.o -o cmTC_e435c   && :
+CMakeFiles/cmTC_e435c.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'strnstr'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the pthread_main_np exist failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_251f2 && [1/2] Building C object CMakeFiles/cmTC_251f2.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_251f2.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE -o CMakeFiles/cmTC_251f2.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: pthread_np.h: No such file or directory
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread_np.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_main_np
+  return ((int*)(&pthread_main_np))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the timingsafe_bcmp exist failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_43830 && [1/2] Building C object CMakeFiles/cmTC_43830.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_43830.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE -o CMakeFiles/cmTC_43830.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c: In function ‘main’:
+CheckSymbolExists.c:8:19: error: ‘timingsafe_bcmp’ undeclared (first use in this function)
+    8 |   return ((int*)(&timingsafe_bcmp))[argc];
+      |                   ^~~~~~~~~~~~~~~
+CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef timingsafe_bcmp
+  return ((int*)(&timingsafe_bcmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_STAT_BIRTHTIME_value failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_5db35 && [1/2] Building C object CMakeFiles/cmTC_5db35.dir/src.c.o
+FAILED: CMakeFiles/cmTC_5db35.dir/src.c.o 
+/usr/bin/cc -DHAVE_STAT_BIRTHTIME_value  -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions  -fPIE -o CMakeFiles/cmTC_5db35.dir/src.c.o -c src.c
+src.c: In function ‘main’:
+src.c:6:34: error: ‘struct stat’ has no member named ‘st_birthtime’
+    6 |   (void)sizeof(((struct stat *)0)->st_birthtime);
+      |                                  ^~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_birthtime);
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_495ba && [1/2] Building C object CMakeFiles/cmTC_495ba.dir/src.c.o
+[2/2] Linking C executable cmTC_495ba
+FAILED: cmTC_495ba 
+: && /usr/bin/cc -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -fuse-ld=gold -Wl,--disable-new-dtags CMakeFiles/cmTC_495ba.dir/src.c.o -o cmTC_495ba   && :
+CMakeFiles/cmTC_495ba.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_create'
+CMakeFiles/cmTC_495ba.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_detach'
+CMakeFiles/cmTC_495ba.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_cancel'
+CMakeFiles/cmTC_495ba.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yc/Documents/GitHub/Myenv/GUI/includes/webkitgtk-2.34.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja-build cmTC_21111 && [1/2] Building C object CMakeFiles/cmTC_21111.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_21111
+FAILED: cmTC_21111 
+: && /usr/bin/cc -fdiagnostics-color=always -Wextra -Wall -Wno-expansion-to-defined -Wno-psabi -Wno-misleading-indentation -Wno-maybe-uninitialized -Wwrite-strings -Wundef -Wpointer-arith -Wmissing-format-attribute -Wformat-security -Wcast-align -Wno-tautological-compare  -fno-strict-aliasing -fno-exceptions -DCHECK_FUNCTION_EXISTS=pthread_create -fuse-ld=gold -Wl,--disable-new-dtags CMakeFiles/cmTC_21111.dir/CheckFunctionExists.c.o -o cmTC_21111  -lpthreads && :
+/usr/bin/ld.gold: error: cannot find -lpthreads
+CMakeFiles/cmTC_21111.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
