@@ -441,7 +441,7 @@ int gtkmobile()
     pthread_t tid;
 
     printf("hi");
-    pthread_create(&tid, NULL, recv_socket, NULL);
+    //pthread_create(&tid, NULL, recv_socket, NULL);
     printf("hi2");
 
     app = gtk_application_new ("org.seagull.mobile", G_APPLICATION_FLAGS_NONE);
