@@ -44,7 +44,15 @@ int SizeofInt(){
     return sizeof(a);
 }
 
+char firstwindow = 0x01;
 int Frame(Display *display_, Window w) {
+  if (firstwindow){
+    XMapWindow(display_,w);
+    int s = DefaultScreen(display_);
+    XResizeWindow(display_,w,DisplayWidth(display_,s),DisplayHeight(display_,s));
+    firstwindow = 0x00;
+    return 0;
+  }
   // Visual properties of the frame to create.
 
   //const unsigned int BORDER_WIDTH = 0;
