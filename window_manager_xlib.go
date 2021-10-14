@@ -8,16 +8,19 @@ package main
 #include <stdio.h>
 #include <stdlib.h>
 
-char IsDisplayNull(Display *d){
+static char IsDisplayNull(Display *d){
 	return !(d);
 }
+
+extern int DetectWM();
+extern int ErrorHandler();
+extern int EventLoop(Display *display_);
+extern char wm_detect;
 */
 import "C"
 import (
-	"bufio"
 	"errors"
 	"fmt"
-	"net"
 	"unsafe"
 )
 
@@ -71,19 +74,17 @@ func (W *WindowManager) Run() {
 	}
 	C.ErrorHandler()
 
-	l, _ := net.Listen("unix", "/tmp/.seagull/wmbus")
-
-	go func() {
-		conn, _ := l.Accept()
-		r := bufio.NewReader(conn)
-		for {
-			b, _ := r.ReadBytes('\n')
-			busSend(b)
-		}
-	}()
-
 	//C.XGrabServer(W.Display)
 
 	C.EventLoop(W.Display)
 
+}
+
+//export GoSend
+func GoSend(msg *C.char) {
+	switch v := C.GoString(msg); v {
+	case "key poweroff":
+		BusSend(v)
+		//C.free(unsafe.Pointer(msg))
+	}
 }

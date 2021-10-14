@@ -10,6 +10,8 @@
 #include <time.h>
 #include <sys/socket.h>
 
+#include "_cgo_export.h"
+
 
 pthread_mutex_t error_lock;
 
@@ -326,7 +328,7 @@ int OnKeyPress(Display *display_, XKeyEvent e) {
     //XRaiseWindow(display_, i->second);
     //XSetInputFocus(display_, i->first, RevertToPointerRoot, CurrentTime);
   } 
-  else if (e.keycode == 124){
+  else if (e.keycode == XKeysymToKeycode(display_, XK_Pointer_Down)){
     timespec_get(&power_btn_press_time,TIME_UTC);
   }
 }
@@ -339,10 +341,10 @@ int OnKeyRelease(Display *display_, XKeyEvent e) {
     struct timespec now;
     timespec_get(&now,TIME_UTC);
     if ((((int64_t) now.tv_sec) * 1000 + ((int64_t) now.tv_nsec) / 1000000)-(((int64_t) power_btn_press_time.tv_sec) * 1000 + ((int64_t) power_btn_press_time.tv_nsec) / 1000000)>1500){
-
+      system("");
     }
     else{
-      system("");
+      GoSend("key poweroff");
     }
   
     printf("power clicked");

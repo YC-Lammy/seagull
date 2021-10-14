@@ -1,39 +1,30 @@
 package main
 
-import (
-	"net"
-	"os"
-)
+import "GUI"
 
-type bus_msg struct {
+/*
+Bus is the central data communiction between C and go
+It connects different components
+*/
+
+type Bus_msg struct {
 	From  string
-	Data  []byte
 	Event string // notify, powerbtn,
 	To    string
+	Data  []byte
 }
 
-var bus = make(chan []byte)
+var bus = make(chan string)
 
 func init() {
-	os.Mkdir("/tmp/.seagull", os.ModePerm)
-	l, err := net.Listen("unix", "/tmp/.seagull/uibus")
-	if err != nil {
-		panic(err)
-	}
 	go func() {
-		defer l.Close()
-		defer os.Remove("/tmp/.seagull/uibus")
-		c, err := l.Accept()
-		if err != nil {
-			panic(err)
-		}
 		for {
 			msg := <-bus
-			c.Write(msg)
+			GUI.GUISend(msg)
 		}
 	}()
 }
 
-func busSend(msg []byte) {
+func BusSend(msg string) {
 	bus <- msg
 }

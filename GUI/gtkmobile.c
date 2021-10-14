@@ -279,7 +279,7 @@ void shutdown_page_slide_in(){
   gtk_overlay_add_overlay(GTK_OVERLAY(overlay),shutdownpage);
 }
 
-void shutdown_page_slide_out(){
+void shutdown_page_slide_out(GtkButton* self, gpointer user_data){
   gtk_overlay_remove_overlay(GTK_OVERLAY(overlay),shutdownpage);
   gtk_overlay_add_overlay(GTK_OVERLAY(overlay),capturer);
 }
@@ -308,6 +308,7 @@ void create_shutdown_page(){
   GtkWidget *poweroffbtn=gtk_button_new_with_label("power off");
   GtkWidget *logoutbtn=gtk_button_new_with_label("logout");
   GtkWidget *icon = gtk_button_new_with_label ("icon");
+  GtkWidget *exitbtn=gtk_button_new_with_label("");
   //GtkWidget *empty = gtk_button_new_with_label ("");
   //gtk_widget_set_size_request(empty,window_width,window_height);
   //gtk_grid_attach(GTK_GRID(grid),empty,0,0,3,8);
@@ -315,6 +316,7 @@ void create_shutdown_page(){
   gtk_grid_attach(GTK_GRID(grid),restartbtn,0,3,1,1);
   gtk_grid_attach(GTK_GRID(grid),poweroffbtn,1,3,1,1);
   gtk_grid_attach(GTK_GRID(grid),logoutbtn,2,3,1,1);
+  gtk_grid_attach(GTK_GRID(grid),exitbtn,0,4,3,3);
 
   g_signal_connect (restartbtn, "clicked",
                 G_CALLBACK (restart), NULL);
@@ -322,6 +324,8 @@ void create_shutdown_page(){
                 G_CALLBACK (poweroff), NULL);
   g_signal_connect (logoutbtn, "clicked",
                 G_CALLBACK (logout), NULL);
+  g_signal_connect (exitbtn, "clicked",
+                G_CALLBACK (shutdown_page_slide_out), NULL);
 
   shutdownpage = grid;
 }
@@ -413,24 +417,11 @@ static void activate (GtkApplication* app, gpointer user_data)
 //      connect socket to go program      //
 ////////////////////////////////////////////
 
-void * recv_socket(void * n){
-  int sockfd = socket(AF_UNIX,SOCK_STREAM, 0);
-  struct sockaddr_un addr;
-  char buf[1024];
-  addr.sun_family = AF_UNIX;
-  strcpy(addr.sun_path,"/tmp/.seagull/uibus");
-  connect(sockfd, (struct sockaddr *)&addr,strlen("/tmp/.seagull/uibus"));
-  for (;;){
-    read(sockfd,buf,1024);
-    switch (buf[0]){
-    case 'n': // notify
-      break;
-    case 's': // shutdown long press
-      shutdown_page_slide_out();
-      break;
-    }
+void recvEvent(char *event){
+  switch (event){
+  case "key poweroff":
+    shutdown_page_slide_in()
   }
-  return NULL;
 }
 
 int gtkmobile()

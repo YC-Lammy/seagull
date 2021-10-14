@@ -5,12 +5,10 @@
 
 extern char wm_detect;
 
-char IsDisplayNull(Display *d);
+extern int DetectWM();
 
-int DetectWM();
+extern int ErrorHandler();
 
-int ErrorHandler();
-
-int EventLoop(Display *display_);
+extern int EventLoop(Display *display_);
 
 #endif
