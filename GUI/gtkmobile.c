@@ -1,14 +1,12 @@
 #include"gtkmobile.h"
 #include <time.h>
-#include<gtk/gtk.h>
+#include <gtk/gtk.h>
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
-#include<math.h>
-
-char done = 0x00; //false
+#include <math.h>
 
 int long_click_ms = 800; // long click duration
 int drag_offset = 5; // dragging offset
@@ -22,6 +20,13 @@ GtkWidget *grid;
 GtkWidget *overlay;
 GtkWidget *capturer;
 
+int total_pages;
+int current_page; // 0,1,2...
+
+/////////////////////////////////////////////
+//         application                     //
+/////////////////////////////////////////////
+
 typedef struct{
   char *name;
   char *exec;
@@ -34,11 +39,50 @@ typedef struct{
 
 application apps[150];
 
-int total_pages;
-int current_page; // 0,1,2...
+void NewApp(char *name, char *exec, char *icon_path,int x, int y){
+  application app;
+  app.name = name;
+}
 
 
+// slide bar and app panel is in the same scroll area
+GtkWidget *panel_slide_scroll_window; 
+
+static void createPanel(){
+  GdkRectangle workarea = {0};
+
+  GListModel *l = gdk_display_get_monitors(gdk_display_get_default());
+  GdkMonitor *m=g_list_model_get_item(l,0);
+  gdk_monitor_get_geometry(m,&workarea);
+  window_width = workarea.width;
+  window_height = workarea.height;
+  GtkWidget *vbox;
+  GtkWidget *box = gtk_fixed_new();
+  gtk_widget_set_hexpand(box, true);
+  gtk_widget_set_vexpand(box, true);
+  gtk_widget_set_size_request(box,window_width,window_height*3);
+  gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(panel_slide_scroll_window),box);
+  GtkWidget *blank = gtk_label_new("hello");
+  gtk_widget_set_size_request(blank,window_width,window_height*3);
+  printf("%d\n",window_height);
+  gtk_widget_set_hexpand(blank, true);
+  gtk_widget_set_vexpand(blank, true);
+  gtk_fixed_put(GTK_FIXED (box),blank,0,window_height);
+  
+  //notify slide
+  GtkWidget *notbox = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
+  gtk_widget_set_hexpand(panel_slide_scroll_window, true);
+  gtk_widget_set_vexpand(panel_slide_scroll_window, true);
+  gtk_widget_show(panel_slide_scroll_window);
+}
+////////////////////////////////////////////
+////////////////////////////////////////////
+//        notify slide                    //
+////////////////////////////////////////////
+////////////////////////////////////////////
 void dragslide(gdouble y){
+  GtkAdjustment*adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW (panel_slide_scroll_window));
+  gtk_adjustment_set_value(adj,gtk_adjustment_get_value(adj)-y);
   printf("drag slide\n");
 }
 void forwardslide(){}
@@ -46,11 +90,12 @@ void reverseslide(){}
 
 ////////////////////////////////////////////
 ////////////////////////////////////////////
-//        notify panel                    //
+//        app panel                    //
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 void dragpanel(gdouble y){
-  printf("drag panel\n");
+  GtkAdjustment*adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW (panel_slide_scroll_window));
+  gtk_adjustment_set_value(adj,gtk_adjustment_get_value(adj)-y);
 }
 void forwardpanel(){}
 void reversepanel(){}
@@ -81,16 +126,18 @@ void clickapp(gdouble x, gdouble y){
   locateapp(x,y);
 }
 
+
 void dragpage(gdouble x){
   GtkAdjustment*adj = gtk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW (scroll_window));
-  gtk_adjustment_get_lower(adj);
-  gtk_adjustment_get_upper(adj);
   gtk_adjustment_set_value(adj,gtk_adjustment_get_value(adj)+x);
   printf("drag page: %f\n",gtk_adjustment_get_value(adj));
 }
+
 void forwardpage(){}
 void backwardpage(){}
 void reversepage(){}
+
+
 
 /////////////////////////////////////////////
 /////////////////////////////////////////////
@@ -354,9 +401,7 @@ static void activate (GtkApplication* app, gpointer user_data)
   capturer= gtk_label_new("");
   gtk_widget_set_vexpand(capturer, true);
   gtk_widget_set_hexpand(capturer, true);
-  gtk_overlay_add_overlay(GTK_OVERLAY (overlay), capturer);
 
-  
   scroll_window = gtk_scrolled_window_new();
   gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scroll_window),GTK_POLICY_ALWAYS,GTK_POLICY_NEVER);
   //gtk_scrolled_window_set_max_content_width(GTK_SCROLLED_WINDOW(scroll_window),window_width);
@@ -366,7 +411,17 @@ static void activate (GtkApplication* app, gpointer user_data)
   gtk_grid_set_column_homogeneous(GTK_GRID(grid),true);
   gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scroll_window),grid);
 
-  gtk_overlay_set_child(GTK_OVERLAY(overlay),scroll_window);
+  panel_slide_scroll_window = gtk_scrolled_window_new();
+  createPanel();
+
+  GtkWidget *overlay2 = gtk_overlay_new();
+  gtk_widget_set_vexpand(overlay2, true);
+  gtk_widget_set_hexpand(overlay2, true);
+
+  gtk_overlay_set_child(GTK_OVERLAY(overlay2),scroll_window);
+  gtk_overlay_add_overlay(GTK_OVERLAY (overlay2), panel_slide_scroll_window);
+  gtk_overlay_set_child(GTK_OVERLAY (overlay), overlay2);
+  gtk_overlay_add_overlay(GTK_OVERLAY (overlay), capturer);
 
   // header bar
   GtkWidget *headerbar = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
@@ -418,22 +473,15 @@ static void activate (GtkApplication* app, gpointer user_data)
 ////////////////////////////////////////////
 
 void recvEvent(char *event){
-  switch (event){
-  case "key poweroff":
-    shutdown_page_slide_in()
+  if (strcmp(event,"key poweroff")==0){
+    shutdown_page_slide_in();
   }
 }
 
 int gtkmobile()
 {
-    printf("hi2");
     GtkApplication *app;
     int status;
-    pthread_t tid;
-
-    printf("hi");
-    //pthread_create(&tid, NULL, recv_socket, NULL);
-    printf("hi2");
 
     app = gtk_application_new ("org.seagull.mobile", G_APPLICATION_FLAGS_NONE);
     g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
