@@ -38,7 +38,13 @@ type WindowManager struct {
 func NewWindowManager(display_str string) (*WindowManager, error) {
 	W := &WindowManager{}
 	display_c_str := C.CString(display_str)
-	W.Display = C.XOpenDisplay(display_c_str)
+	//C.XtToolkitInitialize()
+	if display_str == "" {
+		W.Display = C.XOpenDisplay(nil)
+	} else {
+		W.Display = C.XOpenDisplay(display_c_str)
+	}
+
 	b := C.IsDisplayNull(W.Display)
 	fmt.Println(b)
 	if *(*bool)(unsafe.Pointer(&b)) {
