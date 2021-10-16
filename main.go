@@ -1,13 +1,14 @@
 package main
 
 import (
+	"GUI"
 	"flag"
 	"fmt"
 	"os"
-    "GUI"
 )
 
 var Testing bool
+var isGUI bool
 
 func init() {
 	fmt.Println("Seagull start")
@@ -23,5 +24,5 @@ func main() {
 		panic(err)
 	}
 	go w.Run()
-    GUI.NewGtkWindow()
+	GUI.NewGtkWindow()
 }

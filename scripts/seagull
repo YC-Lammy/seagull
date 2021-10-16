@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+name="Seagull Graphics"
+description="Seagull Graphics"
+
+command=xinit seagull -- :0
+
+depends() {
+    needs localmount
+}

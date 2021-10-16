@@ -10,9 +10,12 @@ import (
 type Wifi struct {
 	SSID      string
 	BSSID     string
+	Freq      string
 	Rate      string
 	Signal    uint8
 	Security  string
+	WPA       string
+	RSN       string
 	Connected bool
 }
 
@@ -25,36 +28,40 @@ var wifi_interfaces = []string{}
 func ScanWifi() ([]Wifi, error) {
 
 	r := bytes.NewBuffer([]byte{})
-	cmd := exec.Command("nmcli", "--terse", "-c", "no", "dev", "wifi")
+	cmd := exec.Command("nmcli", "-f",
+		"SSID,BSSID,FREQ,RATE,SIGNAL,SECURITY,WPA-FLAGS,RSN-FLAGS,IN-USE",
+		"--terse", "-c", "no", "dev", "wifi")
 	cmd.Stdout = r
 	err := cmd.Run()
 	if err != nil {
 		return nil, err
 	}
 	var wifis = []Wifi{}
-	for {
-		var b []byte
-		b, err = r.ReadBytes('\n')
-		if err != nil {
-			break
-		}
-		var line = string(b)
+	lines := strings.Split(r.String(), "\n")
+	for _, line := range lines {
 		line = strings.ReplaceAll(line, `\:`, ".")
 		f := strings.Split(line, ":")
 
+		if len(f) != 9 {
+			continue
+		}
+
 		var strength int
-		strength, err = strconv.Atoi(f[6])
+		strength, err = strconv.Atoi(f[4])
 		if err != nil {
 			continue
 		}
 
 		wifis = append(wifis, Wifi{
-			Connected: f[0] != "*",
+			SSID:      f[0],
 			BSSID:     f[1],
-			SSID:      f[2],
-			Rate:      f[5],
+			Freq:      f[2],
+			Rate:      f[3],
 			Signal:    uint8(strength),
-			Security:  f[8],
+			Security:  f[5],
+			WPA:       f[6],
+			RSN:       f[7],
+			Connected: f[8] == "*",
 		})
 	}
 
