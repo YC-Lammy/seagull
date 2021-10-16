@@ -40,7 +40,7 @@ func NewWindowManager(display_str string) (*WindowManager, error) {
 	display_c_str := C.CString(display_str)
 	//C.XtToolkitInitialize()
 	if display_str == "" {
-		W.Display = C.XOpenDisplay(nil)
+		W.Display = C.XOpenDisplay((*C.char)(C.NULL))
 	} else {
 		W.Display = C.XOpenDisplay(display_c_str)
 	}
