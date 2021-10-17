@@ -47,8 +47,16 @@ void NewApp(char *name, char *exec, char *icon_path,int x, int y){
 
 // slide bar and app panel is in the same scroll area
 GtkWidget *panel_slide_scroll_window; 
+GtkAdjustment *panel_slide_adj;
+//GtkWidget *panel_slide_fixed;
+GtkWidget *panel_slide_box;
+GtkWidget *panel;
+GtkWidget *slide;
 
-static void createPanel(){
+static GtkWidget * createPanel();
+static GtkWidget * createSlide();
+
+static void createPanel_slide(){
   GdkRectangle workarea = {0};
 
   GListModel *l = gdk_display_get_monitors(gdk_display_get_default());
@@ -56,24 +64,31 @@ static void createPanel(){
   gdk_monitor_get_geometry(m,&workarea);
   window_width = workarea.width;
   window_height = workarea.height;
-  GtkWidget *vbox;
-  GtkWidget *box = gtk_fixed_new();
-  gtk_widget_set_hexpand(box, true);
-  gtk_widget_set_vexpand(box, true);
-  gtk_widget_set_size_request(box,window_width,window_height*3);
-  gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(panel_slide_scroll_window),box);
+
+  panel_slide_box = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
+  gtk_box_set_homogeneous(GTK_BOX(panel_slide_box),true);
+  gtk_widget_set_size_request(panel_slide_box,window_width,window_height*3);
+
+  gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(panel_slide_scroll_window),panel_slide_box);
+
+  slide = createSlide();
+  gtk_box_append(GTK_BOX(panel_slide_box),slide);
+
   GtkWidget *blank = gtk_label_new("hello");
-  gtk_widget_set_size_request(blank,window_width,window_height*3);
-  printf("%d\n",window_height);
+  gtk_widget_set_size_request(blank,window_width,window_height);
   gtk_widget_set_hexpand(blank, true);
   gtk_widget_set_vexpand(blank, true);
-  gtk_fixed_put(GTK_FIXED (box),blank,0,window_height);
+  gtk_box_append(GTK_BOX(panel_slide_box),blank);
+
+  panel = createPanel();
+  gtk_box_append(GTK_BOX(panel_slide_box),panel);
+
+  gtk_widget_set_size_request(panel_slide_scroll_window,0,window_height);
+  gtk_widget_show(window);
+  panel_slide_adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW (panel_slide_scroll_window));
+  gtk_adjustment_set_upper(panel_slide_adj, window_height*3);
+  gtk_adjustment_set_value(panel_slide_adj,(double)window_height);
   
-  //notify slide
-  GtkWidget *notbox = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
-  gtk_widget_set_hexpand(panel_slide_scroll_window, true);
-  gtk_widget_set_vexpand(panel_slide_scroll_window, true);
-  gtk_widget_show(panel_slide_scroll_window);
 }
 ////////////////////////////////////////////
 ////////////////////////////////////////////
@@ -81,12 +96,39 @@ static void createPanel(){
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 void dragslide(gdouble y){
-  GtkAdjustment*adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW (panel_slide_scroll_window));
-  gtk_adjustment_set_value(adj,gtk_adjustment_get_value(adj)-y);
-  printf("drag slide\n");
+  gtk_adjustment_set_value(panel_slide_adj,gtk_adjustment_get_value(panel_slide_adj)-y);
 }
-void forwardslide(){}
-void reverseslide(){}
+void forwardslide(){
+  double a = gtk_adjustment_get_value(panel_slide_adj);
+  if (a > window_height){
+    gtk_adjustment_set_value(panel_slide_adj,window_height);
+  }
+  else{
+    gtk_adjustment_set_value(panel_slide_adj,0);
+  }
+  
+}
+void reverseslide(){
+  double a = gtk_adjustment_get_value(panel_slide_adj);
+  if (a > window_height){
+    gtk_adjustment_set_value(panel_slide_adj,window_height*2);
+  }
+  else{
+    gtk_adjustment_set_value(panel_slide_adj,window_height);
+  }
+}
+
+static GtkWidget * createSlide(){
+  
+  GdkPixbuf *background_buf = gdk_pixbuf_new(GDK_COLORSPACE_RGB,true,8,1,1);
+  gdk_pixbuf_fill(background_buf,0x161616e6);
+  gdk_pixbuf_scale_simple(background_buf,window_width*5,window_height*10,GDK_INTERP_NEAREST);
+  GtkWidget *background = gtk_image_new_from_pixbuf(background_buf);
+  //gtk_widget_set_size_request(background,window_width,window_height);
+  gtk_widget_set_hexpand(background, true);
+  gtk_widget_set_vexpand(background, true);
+  return background;
+}
 
 ////////////////////////////////////////////
 ////////////////////////////////////////////
@@ -94,11 +136,39 @@ void reverseslide(){}
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 void dragpanel(gdouble y){
-  GtkAdjustment*adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW (panel_slide_scroll_window));
-  gtk_adjustment_set_value(adj,gtk_adjustment_get_value(adj)-y);
+  gtk_adjustment_set_value(panel_slide_adj,gtk_adjustment_get_value(panel_slide_adj)-y);
 }
-void forwardpanel(){}
-void reversepanel(){}
+void forwardpanel(){
+  double a = gtk_adjustment_get_value(panel_slide_adj);
+  if (a < window_height){
+    gtk_adjustment_set_value(panel_slide_adj,window_height);
+  }
+  else{
+    gtk_adjustment_set_value(panel_slide_adj,window_height*2);
+  }
+  
+}
+void reversepanel(){
+  double a = gtk_adjustment_get_value(panel_slide_adj); 
+  if (a < window_height){
+    gtk_adjustment_set_value(panel_slide_adj,0);
+  }
+  else{
+    gtk_adjustment_set_value(panel_slide_adj,window_height);
+  }
+  
+}
+
+static GtkWidget *createPanel(){
+  GdkPixbuf *background_buf = gdk_pixbuf_new(GDK_COLORSPACE_RGB,true,8,1,1);
+  gdk_pixbuf_fill(background_buf,0x161616e6);
+  gdk_pixbuf_scale_simple(background_buf,window_width*5,window_height*10,GDK_INTERP_NEAREST);
+  GtkWidget *background = gtk_image_new_from_pixbuf(background_buf);
+  //gtk_widget_set_size_request(background,window_width,window_height);
+  gtk_widget_set_hexpand(background, true);
+  gtk_widget_set_vexpand(background, true);
+  return background;
+}
 
 ////////////////////////////////////////////
 ////////////////////////////////////////////
@@ -106,6 +176,7 @@ void reversepanel(){}
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 application *current_grab_app;
+
 void locateapp(gdouble x, gdouble y){ 
   //locate the app in provided location and put it into current_grab_app
   int grid_x = ((int)(round(x/((double)(window_width/5)))));
@@ -137,7 +208,9 @@ void forwardpage(){}
 void backwardpage(){}
 void reversepage(){}
 
+static void createMain(){
 
+}
 
 /////////////////////////////////////////////
 /////////////////////////////////////////////
@@ -293,7 +366,11 @@ void drag_end (
   }
   else if (drag_direction==0x02){
     //determind if we should slide fully down or reverse
-    if (offset_y < window_height/2){
+    double offy = offset_y;
+    if (offy < 0){
+      offy = offy*-1;
+    }
+    if (offy < window_height/2){
       reverseslide();
     }
     else{
@@ -302,7 +379,11 @@ void drag_end (
   }
   else if (drag_direction==0x03){
     //determind if panel goes up or reverse
-    if (offset_y < window_height/2){
+    double offy = offset_y;
+    if (offy < 0){
+      offy = offy*-1;
+    }
+    if (offy < window_height/2){
       reversepanel();
     }
     else{
@@ -412,7 +493,7 @@ static void activate (GtkApplication* app, gpointer user_data)
   gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scroll_window),grid);
 
   panel_slide_scroll_window = gtk_scrolled_window_new();
-  createPanel();
+  createPanel_slide();
 
   GtkWidget *overlay2 = gtk_overlay_new();
   gtk_widget_set_vexpand(overlay2, true);

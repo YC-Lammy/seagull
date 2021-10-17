@@ -32,19 +32,40 @@ void addpage(GtkWidget *widget, gpointer data){
     WebKitWebView *view = WEBKIT_WEB_VIEW(webkit_web_view_new());
     webkit_web_view_load_uri(view, "http://duckduckgo.com");
     //gtk_notebook_append_page(GTK_NOTEBOOK(notebook),GTK_WIDGET (view),NULL);
-    gtk_notebook_insert_page(GTK_NOTEBOOK (notebook),GTK_WIDGET (view),NULL,gtk_notebook_get_n_pages(GTK_NOTEBOOK (notebook))-1);
+    GtkWidget *grid = gtk_grid_new();
+    gtk_grid_attach(GTK_GRID(grid),gtk_label_new("hi "),0,0,1,1);
+    GtkWidget *closebtn = gtk_button_new_with_label("x");
+    gtk_grid_attach(GTK_GRID(grid),closebtn, 1,0,1,1);
+    gtk_notebook_insert_page(GTK_NOTEBOOK (notebook),GTK_WIDGET (view),GTK_WIDGET(grid),gtk_notebook_get_n_pages(GTK_NOTEBOOK (notebook))-1);
     gtk_widget_show_all(GTK_WIDGET(notebook));
+    gtk_widget_show_all(grid);
 }
 
-void addlongpress(GtkGestureLongPress *swipe, gdouble x, gdouble y, gpointer user_data){
-    printf("x:%v y:%v",x,y);
+void destroypage(GtkWidget *widget, gpointer data){
+
 }
 
-void swipepage(GtkGestureSwipe *swipe, gdouble x, gdouble y, gpointer user_data){
-    printf("x:%v y:%v",x,y);
+static void web_view_load_changed (WebKitWebView  *web_view,
+                                   WebKitLoadEvent load_event,
+                                   gpointer        user_data)
+{
+    switch (load_event) {
+    case WEBKIT_LOAD_STARTED:
+        break;
+    case WEBKIT_LOAD_REDIRECTED:
+        break;
+    case WEBKIT_LOAD_COMMITTED:
+        /* The load is being performed. Current URI is
+         * the final one and it won't change unless a new
+         * load is requested or a navigation within the
+         * same page is performed */
+        uri = webkit_web_view_get_uri (web_view);
+        break;
+    case WEBKIT_LOAD_FINISHED:
+        /* Load finished, we can now stop the spinner */
+        break;
+    }
 }
-
-
 
 int main(int argc, char *argv[]){
     gtk_init(&argc, &argv);
@@ -71,15 +92,11 @@ int main(int argc, char *argv[]){
     webview = WEBKIT_WEB_VIEW(webkit_web_view_new());
 
     GtkWidget *addbutton = gtk_button_new_with_label("+");
-    GtkGesture *addlong = gtk_gesture_long_press_new(GTK_WIDGET (addbutton));
-    g_signal_connect (addlong,"pressed",G_CALLBACK(addlongpress),NULL);
+
 
     notebook = gtk_notebook_new();
     gtk_notebook_append_page(GTK_NOTEBOOK(notebook),GTK_WIDGET (webview),NULL);
     gtk_notebook_append_page(GTK_NOTEBOOK(notebook),GTK_WIDGET (webview),GTK_WIDGET (addbutton));
-
-    GtkGesture *swipe = gtk_gesture_swipe_new(GTK_WIDGET (notebook));
-    g_signal_connect (swipe,"swipe",G_CALLBACK(swipepage),NULL);
 
     gtk_grid_attach(GTK_GRID (grid),  notebook, 0, 1, 20, 4);
 

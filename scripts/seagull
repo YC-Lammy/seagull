@@ -3,9 +3,12 @@
 name="Seagull Graphics"
 description="Seagull Graphics"
 
-command=xinit seagull -- :0
 command_user="root"
 
 depends() {
     needs localmount
+}
+
+start() {
+    xinit seagull -- :0
 }
