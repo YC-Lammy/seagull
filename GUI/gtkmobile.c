@@ -5,6 +5,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <math.h>
 
@@ -27,21 +28,10 @@ int current_page; // 0,1,2...
 //         application                     //
 /////////////////////////////////////////////
 
-typedef struct{
-  char *name;
-  char *exec;
-  char *icon_path;
-  int x; //position in the grid
-  int y;
-  GtkWidget *widget;
-
-} application;
-
 application apps[150];
 
-void NewApp(char *name, char *exec, char *icon_path,int x, int y){
-  application app;
-  app.name = name;
+
+void NewApp(application *app){
 }
 
 
