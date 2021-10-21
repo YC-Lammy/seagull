@@ -1,3 +1,5 @@
+//+build xlib
+
 #include"window_manager_xlib.h"
 #include <stdlib.h>
 #include <stdbool.h>

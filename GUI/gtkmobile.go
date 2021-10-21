@@ -96,8 +96,12 @@ func init() {
 				b, _ := ioutil.ReadAll(f)
 				var name string
 				for _, n := range strings.Split(string(b), "\n") {
+					if len(n) < 5 {
+						continue
+					}
 					if n[:5] == "Name" {
 						name = strings.Split(n, "=")[1]
+						app.name = C.CString(name)
 					}
 				}
 

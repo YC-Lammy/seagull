@@ -1,3 +1,5 @@
+//+build xlib
+
 package main
 
 /*

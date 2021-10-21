@@ -1,3 +1,5 @@
+//+build xlib
+
 #ifndef WINDOW_MANAGER_XLIB_H
 #define WINDOW_MANAGER_XLIB_H
 

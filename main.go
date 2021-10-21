@@ -24,10 +24,25 @@ func main() {
 		GUI.NewGtkWindow()
 		return
 	}
-	w, err := NewWindowManager("")
-	if err != nil {
-		panic(err)
+	crash := make(chan byte, 10)
+	w, _ := NewWindowManager()
+	crash <- 0x00
+	crash <- 0x01
+	for {
+		select {
+		case b := <-crash:
+			switch b {
+			case 0x00:
+				go func() {
+					w.Run()
+					crash <- 0x00
+				}()
+			case 0x01:
+				go func() {
+					GUI.NewGtkWindow()
+					crash <- 0x01
+				}()
+			}
+		}
 	}
-	go w.Run()
-	GUI.NewGtkWindow()
 }

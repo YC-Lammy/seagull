@@ -458,7 +458,7 @@ static void activate (GtkApplication* app, gpointer user_data)
   window = gtk_application_window_new (app);
   gtk_window_set_title (GTK_WINDOW(window), "seagull");
   gtk_window_maximize(GTK_WINDOW (window));
-  gtk_window_fullscreen (GTK_WINDOW (window));
+  //gtk_window_fullscreen (GTK_WINDOW (window));
   //gtk_window_set_resizable(GTK_WINDOW (window),false);
   window_width = gtk_widget_get_width (window);
   window_height = gtk_widget_get_height (window);
