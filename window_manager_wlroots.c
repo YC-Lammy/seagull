@@ -981,7 +981,12 @@ int Cmain() {
 	 * the clients cannot set the selection directly without compositor approval,
 	 * see the handling of the request_set_selection event below.*/
 	server.compositor = wlr_compositor_create(server.wl_display, server.renderer);
+
 	wlr_data_device_manager_create(server.wl_display);
+	wlr_screencopy_manager_v1_create(server.wl_display);
+	wlr_text_input_manager_v3_create(server.wl_display);
+	wlr_input_method_manager_v2_create(server.wl_display);
+
 
 	/* Creates an output layout, which a wlroots utility for working with an
 	 * arrangement of screens in a physical layout. */
@@ -1004,10 +1009,7 @@ int Cmain() {
 	server.new_virtual_keyboard.notify = server_new_virtual_keyboard;
 	wl_signal_add(&server.virtual_keyboard_manager->events.new_virtual_keyboard,
 	&server.new_virtual_keyboard);
-	
-	wlr_screencopy_manager_v1_create(server.wl_display);
-	wlr_text_input_manager_v3_create(server.wl_display);
-	wlr_input_method_manager_v2_create(server.wl_display);
+	wl_list_init(&server.virtual_keyboards);
 
 	/*
 	 * Creates a cursor, which is a wlroots utility for tracking the cursor
