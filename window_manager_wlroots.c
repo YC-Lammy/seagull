@@ -999,10 +999,12 @@ int Cmain() {
 	wl_signal_add(&server.xdg_shell->events.new_surface,
 			&server.new_xdg_surface);
 
+
 	server.virtual_keyboard_manager = wlr_virtual_keyboard_manager_v1_create(server.wl_display);
 	server.new_virtual_keyboard.notify = server_new_virtual_keyboard;
 	wl_signal_add(&server.virtual_keyboard_manager->events.new_virtual_keyboard,
 	&server.new_virtual_keyboard);
+	
 	wlr_screencopy_manager_v1_create(server.wl_display);
 	wlr_text_input_manager_v3_create(server.wl_display);
 	wlr_input_method_manager_v2_create(server.wl_display);
