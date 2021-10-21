@@ -1081,10 +1081,6 @@ int Cmain() {
 	 * startup command if requested. */
 	setenv("WAYLAND_DISPLAY", socket, true);
 
-	/* Run the Wayland event loop. This does not return until you exit the
-	 * compositor. Starting the backend rigged up all of the necessary event
-	 * loop configuration to listen to libinput events, DRM events, generate
-	 * frame events at the refresh rate, and so on. */
 	wlr_log(WLR_INFO, "Running Wayland compositor on WAYLAND_DISPLAY=%s",
 			socket);
 
