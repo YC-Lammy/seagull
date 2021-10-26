@@ -11,6 +11,7 @@ pub struct MediaPlayer {
     pub id: String,
     pub title:String,
     pub icon_path:String,
+    pub icon_bytes: String,
 }
 
 pub fn Init() {
