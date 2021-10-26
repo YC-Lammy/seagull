@@ -14,6 +14,8 @@ pub struct MediaPlayer {
     pub icon_bytes: String,
 }
 
+let hi [String];
+
 pub fn Init() {
     thread::spawn(move || {
         // First open up a connection to the session bus.
