@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Seagull
+Type=Application
+Exec=seagull
+TryExec=seagull
+DesktopNames=Seagull

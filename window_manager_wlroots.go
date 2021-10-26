@@ -17,17 +17,21 @@ var (
 	nullptr *C.char = (*C.char)(unsafe.Pointer(uintptr(0x00)))
 )
 
-var apps = map[string]*C.view{}
+type View *C.view
 
-type window_manager_wlroots struct {
+type Window_manager_wlroots struct {
 	apps map[string]*C.view
 }
 
-func NewWindowManager() (wm *window_manager_wlroots, err error) {
+func NewWindowManager() (wm *Window_manager_wlroots, err error) {
 	os.Setenv("LD_LIBRARY_PATH", os.Getenv("LD_LIBRARY_PATH")+":/usr/local/lib64")
 	return
 }
 
-func (*window_manager_wlroots) Run() {
+func (*Window_manager_wlroots) Run() {
 	C.Cmain()
+}
+
+func FocusApp(View) {
+
 }
